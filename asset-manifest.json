@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/React-Adventure-FrontPage/static/css/main.d93121d0.chunk.css",
+    "main.js": "/React-Adventure-FrontPage/static/js/main.e883d0d6.chunk.js",
+    "main.js.map": "/React-Adventure-FrontPage/static/js/main.e883d0d6.chunk.js.map",
+    "runtime-main.js": "/React-Adventure-FrontPage/static/js/runtime-main.fcef9683.js",
+    "runtime-main.js.map": "/React-Adventure-FrontPage/static/js/runtime-main.fcef9683.js.map",
+    "static/js/2.c0fb630c.chunk.js": "/React-Adventure-FrontPage/static/js/2.c0fb630c.chunk.js",
+    "static/js/2.c0fb630c.chunk.js.map": "/React-Adventure-FrontPage/static/js/2.c0fb630c.chunk.js.map",
+    "index.html": "/React-Adventure-FrontPage/index.html",
+    "static/css/main.d93121d0.chunk.css.map": "/React-Adventure-FrontPage/static/css/main.d93121d0.chunk.css.map",
+    "static/js/2.c0fb630c.chunk.js.LICENSE.txt": "/React-Adventure-FrontPage/static/js/2.c0fb630c.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/React-Adventure-FrontPage/static/media/mountainbg.4dc3b49f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fcef9683.js",
+    "static/js/2.c0fb630c.chunk.js",
+    "static/css/main.d93121d0.chunk.css",
+    "static/js/main.e883d0d6.chunk.js"
+  ]
+}
