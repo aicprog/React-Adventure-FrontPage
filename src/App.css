@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a{
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  position: absolute;
+  width: 100%;
+}
+
+.logo{
+  display: flex;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 32px;
+}
+
+.logo h4{
+  margin-left: 10px;
+  letter-spacing: 1px;
+  font-weight: lighter;
+}
+
+.navlinks{
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  list-style: none;
+  width: 50%;
+  font-size: clamp(1rem, 1vw, 1.1rem);
+
+}
+
+.link{
+    letter-spacing: 3px;
+    
+}
+
+
+.link a{
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.link a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.hamburger-toggle{
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+
+.main{
+  background: radial-gradient(at center center, #2d7e9270 0%, #1c40617c 100%), 
+  url("./images/mountainbg.jpg");
+  height: 100vh;
+  background-position: center;
+}
+
+.hero{
+  max-width: 800px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 1);
 }
 
-.App-link {
-  color: #61dafb;
+
+.hero h1{
+  font-size: clamp(2.5rem, 3.3vw, 5rem);
+  font-weight: normal;
+  letter-spacing: 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.hero h2{
+  font-size: clamp(0.8rem, 1vw, 2rem);
+  font-weight: lighter;
+  letter-spacing: 4px;
+}
+
+.hero p{
+  text-align: center;
+  font-size: clamp(0.8rem, 0.9vw, 1.3rem);
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.hero_btn-services, .hero_btn-about{
+  border: #fff solid 1px;
+  background-color: transparent;
+  padding: 10px 50px;
+  margin: 0 10px;
+  color: #fff;
+
+}
+
+.hero .hero_btn-about{
+  color: rgba(26, 108, 122, 1);
+  background-color: #fff;
+}
+
+/**Media Queries*/
+
+@media screen and (max-width: 850px){
+  .hamburger-toggle{
+    display: block;
   }
-  to {
-    transform: rotate(360deg);
+
+
+  .navlinks{
+    position: absolute;
+    right: 0px;
+    top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 92vh;
+    width: 100%;
+    background-color: rgba(0, 128, 128, 0.95);
+    transform: translateX(100%);
+
+
+  }
+
+  .active{
+    transform: translateX(0%);
   }
 }
